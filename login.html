@@ -35,48 +35,22 @@
 
     <section id="right">
       <h1>Create Account</h1>
-      <form action="" method="post">
-        <input
-          type="text"
-          name="fullname"
-          id="fullname"
-          placeholder="Full Name"
-        />
+      <form action="" method="post" id="loginform">
         <input
           type="email"
           name="email"
           id="email"
           placeholder="Email Address"
         />
-        <span>
-          <input
-            type="text"
-            name="address"
-            id="address"
-            placeholder="Address"
-          />
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="Phone Number"
-          />
-        </span>
         <input
           type="password"
           name="password"
           id="password"
           placeholder="Password"
         />
-        <input
-          type="password"
-          name="confirm_password"
-          id="confirm_password"
-          placeholder="Confirm Password"
-        />
       </form>
-      <button type="submit">Create Account</button>
-      <p>Already have an account? <a href="./login.html">Login</a></p>
+      <button type="submit">Login</button>
+      <p>Don't have an account? <a href="./createAccount.html">Create Account</a></p>
       <h6> OR</h6>
       <div class="googlesignin">
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
