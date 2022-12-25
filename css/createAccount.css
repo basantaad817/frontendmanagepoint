@@ -13,6 +13,8 @@ body{
 #left{
     background-color: var(--primary);
     color: var(--secondary);
+    clip-path: polygon(0 0, 100% 0%, 87% 100%, 0% 100%);
+
     width: 50%;
     height: 100%;
     display: flex;
@@ -82,10 +84,20 @@ p{
 h6{
     text-align: center;
 }
-.googlesignin{
-    /* border: 2px solid red; */
-}
 .googlesignin div{
     margin: auto;
     width: 50%;
 }
+@media only screen and (max-width: 600px) {
+    body {
+      flex-wrap: wrap;
+    }
+    #left , #right{
+        width: 100%;
+    }
+    #left{
+        height: 50vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+    }
+  }
