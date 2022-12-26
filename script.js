@@ -1,11 +1,9 @@
 // menu bar
 
-let menu = document.querySelector('#menu-bar');
-let links = document.querySelector('.links');
+const navToggle = document.querySelector("#menu-bar");
+const link = document.querySelector(".links");
 
-menu.onclick = () =>{
-
-  menu.classList.toggle('fa-times');
-  links.classList.toggle('active');
-
-}
+navToggle.addEventListener("click", function () {
+  navToggle.classList.toggle("fa-times");
+  link.classList.toggle("show_nav");
+});
