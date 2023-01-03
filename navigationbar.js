@@ -115,10 +115,10 @@ class Header extends HTMLElement {
       >
       <div id="menu-bar" class="fas fa-bars"></div>
       <div class="links">
-        <a href="#">Subscribers</a>
-        <a href="#">Broadcasts</a>
+        <a href="./subscriber.html">Subscribers</a>
+        <a href="./broadcast.html">Broadcasts</a>
         <a href="#">Learn</a>
-        <a href="#"
+        <a href="./accountdetails.html"
           ><img
             src="./assets/MP_logo.png"
             alt="Profile Pic"
