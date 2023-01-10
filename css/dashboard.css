@@ -9,37 +9,42 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   background: var(--primary);
   padding: 3%;
+  flex-wrap: wrap;
 }
-.logo{
+header a {
+  display: flex;
+  align-items: center;
+}
+.logo {
   color: var(--secondary);
   text-decoration: none;
   font-weight: 700;
   font-size: 3rem;
-  min-width: 30%;
+  /* min-width: 30%; */
 }
-.logo img{
+.logo img {
   margin-right: 2%;
 }
 .links {
-  min-width: 40%;
+  min-width: 50%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  border: 2px solid hotpink;
 }
 
 .links a {
-  font-size: 1.3rem;
-  margin: 2%;
+  font-size: 1.2rem;
+  /* margin: 2% 0; */
   text-decoration: none;
   color: var(--secondary);
-  font-weight: 400;
   padding: 3%;
-
+  border: 1px solid green;
 }
 .links a:hover {
-  border: 1px solid var(--secondary);
+  /* border: 1px solid var(--secondary); */
   border-radius: 7px;
   color: var(--primary);
   background-color: var(--secondary);
@@ -50,10 +55,12 @@ header {
   font-size: 3rem;
   cursor: pointer;
   color: var(--secondary);
-  border: 0.1rem solid var(--secondary);
+  /* border: 0.1rem solid var(--secondary); */
   border-radius: 0.3rem;
   padding: 0.5rem 1.5rem;
   display: none;
+  width: 12vw;
+  
 }
 .main {
   background: var(--primary);
@@ -79,14 +86,14 @@ header {
   font-size: 3rem;
   width: 45%;
 }
-iframe{
+iframe {
   /* border: 5px solid var(--primary); */
   border-radius: 18px;
   box-shadow: var(--primary) 5px 5px;
   width: 45%;
   height: 45vh;
 }
-iframe:hover{
+iframe:hover {
   border: none;
   box-shadow: none;
   transition: 0.9s ease-in-out;
@@ -120,30 +127,36 @@ footer {
   height: 50px;
 }
 
-
 /* ======responsive========== */
+@media (max-width: 880px) {
+  .logo {
+    width: 40%;
+  }
+  .links {
+    width: 55%;
+  }
+}
 
 @media (max-width: 768px) {
-  header{
+  header {
     display: flex;
     flex-direction: column;
     width: 100vw;
     justify-content: space-around;
-}
-.links{
+  }
+  .links {
     display: none;
-}
-#menu-bar{
+  }
+  #menu-bar {
     display: block;
-}
+  }
 
-.show_nav {
+  .show_nav {
     padding-top: 2%;
     display: flex;
     width: 100vw;
     height: 100vh;
     flex-direction: column;
     justify-content: flex-start;
-}
-
+  }
 }

@@ -30,6 +30,7 @@ body{
     display: flex;
     justify-content: space-around;
     font-size: 3rem;
+    width: 90%;
 }
 /* ======left side completed======== */
 /* ======right side ======== */
@@ -62,10 +63,13 @@ input{
     border: none;
     border-bottom: 2px solid var(--primary);
     color: var(--primary);
-    height:15%;
+    height:6vh;
     font-size: 1.4rem;
     padding: 2%;
 }
+input:focus-visible{
+    outline: none;
+  }
 form span{
     height: 15%;
     display: flex;

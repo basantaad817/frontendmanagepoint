@@ -17,30 +17,6 @@
   min-height: 100vh;
 }
 
-.left {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-  height: 30vh;
-}
-
-.left a {
-  border-radius: 5px;
-  background-color: var(--secondary);
-  color: var(--primary);
-  width: 100%;
-  padding: 5%;
-  text-decoration: none;
-}
-
-.left a:hover {
-  background-color: var(--primary);
-  border: 3px solid var(--secondary);
-  color: var(--secondary);
-  transition: 0.2s ease-in;
-}
-
 .right {
   background: aliceblue;
   border-radius: 20px;
@@ -88,21 +64,4 @@ span input {
 ::placeholder {
   color: var(--primary);
   font-size: 1.4rem;
-}
-.right button {
-  background-color: var(--primary);
-  border-radius: 4%;
-  font-weight: bolder;
-  letter-spacing: 1px;
-  color: var(--secondary);
-  padding: 2%;
-}
-
-.bottom-btn {
-  display: flex;
-  justify-content: end;
-}
-.bottom-btn button {
-  margin-left: 3%;
-  border-radius: 30%;
 }
