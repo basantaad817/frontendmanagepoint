@@ -110,7 +110,7 @@ class Header extends HTMLElement {
       }
     </style>
     <header>
-      <a href="#" class="logo"
+      <a href="./analytics.html" class="logo"
         ><img src="./assets/MP_logo.png" alt="logo" /></a
       >
       <div id="menu-bar" class="fas fa-bars"></div>
