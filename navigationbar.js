@@ -117,7 +117,7 @@ class Header extends HTMLElement {
       <div class="links">
         <a href="./subscriber.html">Subscribers</a>
         <a href="./broadcast.html">Broadcasts</a>
-        <a href="#">Learn</a>
+        <a href="./newsletter.html">Newsletter</a>
         <a href="./accountdetails.html"
           ><img
             src="./assets/MP_logo.png"
