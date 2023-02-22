@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/subscriber.css">
     <link rel="stylesheet" href="./css/broadcast.css">
     <script src="./navigationbar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -128,7 +129,14 @@
         <div class="side-part">
             <h3>Subscriber count: <span>0</span></h3>
             <div class="mini">
-                <button class="button">Add subscriber</button>
+                <div id="box">
+                    <span id="button">Add Subscriber</span>
+                   <form action="" id="form">
+                     <p><input type="text" placeholder="Name"/></p>
+                     <p><input type="email" placeholder="Email address" /></p>
+                     <p><input type="submit" class="button" value="Add" /></p>
+                   </form>
+               </div>
                 <p style="margin-bottom: 5%;">
                     <input type="file" id="fileUpload" />
 <input type="button" id="upload" value="Upload" onclick="Upload()" />
@@ -141,5 +149,10 @@
     <script src="./bulkaction.js"></script>
 
 </body>
-
+<script>
+    $("#button").click(function() {  
+  $("#box form").toggle("slow");
+  return false;
+});
+</script>
 </html>
